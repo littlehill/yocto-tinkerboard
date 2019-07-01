@@ -7,8 +7,8 @@ DEFAULT_PREFERENCE = "-1"
 include gstreamer1.0-rockchip.inc
 
 SRCBRANCH ?= "develop"
-SRCREV = "${AUTOREV}"
-SRC_URI = "git://github.com/rockchip-linux/gstreamer-rockchip.git;branch=develop"
+SRCREV = "c766879e0b750233b197a2dd495e562d64498244"
+SRC_URI = "git://github.com/rockchip-linux/gstreamer-rockchip.git;branch=master"
 
 PV = "develop++git${SRCPV}"
 

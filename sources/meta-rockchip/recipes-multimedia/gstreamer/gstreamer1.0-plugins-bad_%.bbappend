@@ -1,4 +1,4 @@
-PV="1.10.4"
+PV="1.12.5"
 
 SRC_URI_remove = " \
     file://ensure-valid-sentinels-for-gst_structure_get-etc.patch \
@@ -14,7 +14,6 @@ SRC_URI_remove = " \
 "
 
 SRC_URI += " \
-    file://0010-gl-pkg-config-don-t-advertise-all-our-dependent-libr.patch \
     file://0011-gstreamer-gl.pc.in-don-t-append-GL_CFLAGS-to-CFLAGS.patch  \
     file://0012-Makefile.am-don-t-hardcode-libtool-name-when-running.patch \
 "
@@ -22,5 +21,5 @@ SRC_URI += " \
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 FILESPATH_prepend := "${THISDIR}/${PN}:"
 
-SRC_URI[md5sum] = "2757103e57a096a1a05b3ab85b8381af"
-SRC_URI[sha256sum] = "23ddae506b3a223b94869a0d3eea3e9a12e847f94d2d0e0b97102ce13ecd6966"
+SRC_URI[md5sum] = "b64d61f7329a7e663478d7641d4fa9ca"
+SRC_URI[sha256sum] = "40f82fa775ce8ecfc930fd13073e8643b90cba9b6f8dd2462ec45a93120c7d81"

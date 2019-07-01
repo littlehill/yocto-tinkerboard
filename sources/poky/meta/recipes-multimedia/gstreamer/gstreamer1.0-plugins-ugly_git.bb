@@ -6,16 +6,16 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=a6f89e2100d9b6cdffcea4f398e37343 \
                     file://tests/check/elements/xingmux.c;beginline=1;endline=21;md5=4c771b8af188724855cb99cadd390068"
 
 SRC_URI = " \
-    git://anongit.freedesktop.org/gstreamer/gst-plugins-ugly;branch=1.8;name=base \
-    git://anongit.freedesktop.org/gstreamer/common;destsuffix=git/common;name=common \
+    git://anongit.freedesktop.org/gstreamer/gst-plugins-ugly;branch=1.12;name=base \
+    git://anongit.freedesktop.org/gstreamer/common;branch=1.12;destsuffix=git/common;name=common \
 "
 
-PV = "1.8.2+git${SRCPV}"
+PV = "1.12.5+git${SRCPV}"
 
 UPSTREAM_CHECK_GITTAGREGEX = "(?P<pver>(\d+(\.\d+)+))"
 
-SRCREV_base = "79fe43c00925455a37fab6fc428e7f08655a9bbd"
-SRCREV_common = "f363b3205658a38e84fa77f19dee218cd4445275"
+SRCREV_base = "8862ca271f5c8f64fe1677354bd465f23e589a06"
+SRCREV_common = "dd9d4031075713cf37c656ce639b6d60d6f9dde3"
 SRCREV_FORMAT = "base"
 
 S = "${WORKDIR}/git"

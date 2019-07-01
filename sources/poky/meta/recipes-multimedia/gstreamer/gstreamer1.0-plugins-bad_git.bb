@@ -3,13 +3,11 @@ DEFAULT_PREFERENCE = "-1"
 include gstreamer1.0-plugins-bad.inc
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=73a5855a8119deb017f5f13cf327095d \
-                    file://COPYING.LIB;md5=21682e4e8fea52413fd26c60acb907e5 \
-                    file://gst/tta/crc32.h;beginline=12;endline=29;md5=27db269c575d1e5317fffca2d33b3b50 \
-                    file://gst/tta/filters.h;beginline=12;endline=29;md5=8a08270656f2f8ad7bb3655b83138e5a"
+                    file://COPYING.LIB;md5=21682e4e8fea52413fd26c60acb907e5 "
 
 SRC_URI = " \
-    git://anongit.freedesktop.org/gstreamer/gst-plugins-bad;branch=1.8;name=base \
-    git://anongit.freedesktop.org/gstreamer/common;destsuffix=git/common;name=common \
+    git://anongit.freedesktop.org/gstreamer/gst-plugins-bad;branch=1.12;name=base \
+    git://anongit.freedesktop.org/gstreamer/common;branch=1.12;destsuffix=git/common;name=common \
     file://configure-allow-to-disable-libssh2.patch \
     file://fix-maybe-uninitialized-warnings-when-compiling-with-Os.patch \
     file://avoid-including-sys-poll.h-directly.patch \
@@ -17,12 +15,12 @@ SRC_URI = " \
     file://0001-gstreamer-gl.pc.in-don-t-append-GL_CFLAGS-to-CFLAGS.patch \
 "
 
-PV = "1.8.2+git${SRCPV}"
+PV = "1.12.5+git${SRCPV}"
 
 UPSTREAM_CHECK_GITTAGREGEX = "(?P<pver>(\d+(\.\d+)+))"
 
-SRCREV_base = "5e73b5a4843d9675246f4efec158624475ed9586"
-SRCREV_common = "f363b3205658a38e84fa77f19dee218cd4445275"
+SRCREV_base = "7c4807c6f024eda438c9f8d7f895cd686800e228"
+SRCREV_common = "dd9d4031075713cf37c656ce639b6d60d6f9dde3"
 SRCREV_FORMAT = "base"
 
 S = "${WORKDIR}/git"
